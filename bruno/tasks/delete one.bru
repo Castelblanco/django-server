@@ -1,0 +1,11 @@
+meta {
+  name: delete one
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://127.0.0.1:8000/v1/tasks/2/
+  body: json
+  auth: none
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block titleHead %}Tasks{% endblock titleHead %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+        <h2>sdvsdvsdv</h2>
+        <ul>
+            {% for entity in list %}
+                <li>Name: {{ entity.name }} - Price: {{ entity.price }}</li>
+            {% endfor %}
+        </ul>
+{% endblock body %}
