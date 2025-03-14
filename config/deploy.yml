@@ -1,0 +1,14 @@
+# Name of your application. Used to uniquely configure containers.
+service: django-server
+
+# Deploy to these servers.
+servers:
+  - 11.40.1.249
+
+ssh:
+  user: webmaster
+  port: 1025
+  options: "-o StrictHostKeyChecking=no"
+
+builder:
+  local: true
